@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "esm",
+    "jsx": "react",
+    "module": "es6",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "declaration": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "components/**/*.ts",
+    "components/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "components/**/*.test.tsx",
+    "components/**/*.test.ts"
+  ]
+}
