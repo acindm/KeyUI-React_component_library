@@ -1,6 +1,6 @@
 ---
 hero:
-  title: library
+  title: Key-UI
   description: Simple, Modular & Accessible UI Components for your React Applications
   actions:
     - text: Hello
