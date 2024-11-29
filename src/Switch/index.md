@@ -1,26 +1,39 @@
+---
+title: Switch 开关
+nav:
+  title: 组件
+  path: /src
+group:
+  title: 基础
+---
 
 # Switch 开关
 两种状态选择切换。
 
 ## 使用场景
-- 我们提供了 7 种按钮。
-- 禁用：行动点不可用的时候，一般需要文案解释。
+用于两种状态的切换、某项功能的开关。会直接触发状态改变。
+- 下文提供了 4 种开关用法。
+- 禁用：功能处于开启/关闭状态，需要告知用户但不可以被用户更改。
+
 
 ## 默认用法
 最基本的使用方法。
 <code src="./demo/base.tsx"></code>
 
-## 禁用状态
-通过`disabled`开启禁用。
-<code src="./demo/disabled.tsx"></code>
 
-## 按钮大小设置
+## 开关尺寸
 右侧为默认大小，通过`small` 切换到小开关
 <code src="./demo/size.tsx"></code>
 
-## 按钮与字体和图标
+
+## 按钮字体
 `checkedChildren` 自定义选中内容，`unCheckedChildren` 自定义未选中内容。
 <code src="./demo/font.tsx"></code>
+
+
+## 禁用状态
+通过`disabled`开启禁用。
+<code src="./demo/disabled.tsx"></code>
 
 
 ## API
