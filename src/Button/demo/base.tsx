@@ -1,14 +1,19 @@
-// src/Button/demo/base.tsx
-
+import { Button, Space } from '@indigo-ui/components';
 import React from 'react';
-import { Button } from 'KeyUI';
+import { FC } from 'react';
 
-export default () => {
-
+const App: FC = () => {
   return (
-    <>
-      <Button type="default">默认按钮</Button> &nbsp;
+    <Space>
+      <Button>默认按钮</Button>
       <Button type="primary">主要按钮</Button>
-    </>
+      <Button type="warning">警告按钮</Button>
+      <Button type="danger">失败按钮</Button>
+      <Button type="info">信息按钮</Button>
+      <Button type="link">链接按钮</Button>
+      <Button type="dashed">虚线按钮</Button>
+    </Space>
   );
-}
+};
+
+export default App;

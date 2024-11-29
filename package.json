@@ -57,8 +57,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.14",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/testing-library__react": "^10.0.1",
     "@umijs/lint": "^4.0.0",
     "dumi": "^2.4.13",
     "eslint": "^8.23.0",
@@ -71,5 +75,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "stylelint": "^14.9.1"
+  },
+  "dependencies": {
+    "@indigo-ui/components": "^0.5.12"
   }
 }

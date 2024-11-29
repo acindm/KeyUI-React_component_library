@@ -1,27 +1,140 @@
+@import '@/styles/common';
+@import 'mix';
 
-.dumi-btn {
-    font-size: 14px;
-    height: 32px;
-    padding: 4px 15px;
-    border-radius: 6px;
-    transition: all .3s;
-    cursor: pointer;
-  }
-  
-  .dumi-btn-default {
-    background: #fff;
-    color: #333;
-    border: 1px solid #d9d9d9;
-  
-    &:hover {
-      color: #ff7d4c;
-      border-color: #ff7d4c;
+.btn {
+  position: relative;
+  display: inline-block;
+  font-weight: @btn-font-weight;
+  // line-height: @btn-line-height;
+  color: @body-color;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  background-image: none;
+  border: @btn-border-width solid transparent;
+  .button-size(@btn-padding-y, @btn-padding-x, @btn-font-size, @btn-border-radius, @height-base, @line-height-base);
+  box-shadow: @btn-box-shadow;
+  cursor: pointer;
+  transition: @btn-transition;
+  .center-content();
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: @btn-disabled-opacity;
+    box-shadow: none;
+
+    > * {
+      pointer-events: none;
     }
   }
-  
-  .dumi-btn-primary {
-    color: #fff;
-    background: #ff7d4c;
-    border: 1px solid #ff7d4c;
+
+  &:focus,
+  &.focus {
+    outline: none;
   }
-  
+
+  &.circle,
+  &[circle] {
+    .button-circle(@height-base);
+  }
+}
+
+.btn-large {
+  .button-size(
+    @btn-padding-y-lg,
+    @btn-padding-x-lg,
+    @btn-font-size-lg,
+    @btn-border-radius-lg,
+    @height-lg,
+    @line-height-lg
+  );
+
+  &.circle,
+  &[circle] {
+    .button-circle(@height-lg);
+  }
+}
+
+.btn-middle {
+  .button-size(
+    @btn-padding-y-middle,
+    @btn-padding-x-middle,
+    @btn-font-size-middle,
+    @btn-border-radius,
+    @height-base,
+    @line-height-base
+  );
+
+  &.circle,
+  &[circle] {
+    .button-circle(@height-base);
+  }
+}
+
+.btn-small {
+  .button-size(
+    @btn-padding-y-sm,
+    @btn-padding-x-sm,
+    @btn-font-size-sm,
+    @btn-border-radius-sm,
+    @height-sm,
+    @line-height-sm
+  );
+
+  &.circle,
+  &[circle] {
+    .button-circle(@height-sm);
+  }
+}
+
+.btn-primary {
+  .button-style(@primary, @primary, @white);
+}
+
+.btn-warning {
+  .button-style(@warning, @warning, @white);
+}
+
+.btn-info {
+  .button-style(@success, @success, @white);
+}
+
+.btn-danger {
+  .button-style(@danger, @danger, @white);
+}
+
+.btn-default {
+  .button-style(@white, @gray-400, @body-color, @white, @primary, @primary);
+}
+
+.btn-link {
+  font-weight: @font-weight-normal;
+  color: @btn-link-color;
+  text-decoration: @link-decoration;
+  box-shadow: none;
+  background-color: transparent;
+
+  &:hover {
+    color: @btn-link-hover-color;
+    text-decoration: @link-hover-decoration;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: @link-hover-decoration;
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: @btn-link-disabled-color;
+    pointer-events: none;
+  }
+}
+
+.btn-dashed {
+  .button-style(@white, @gray-400, @body-color, @white, @primary, @primary);
+  border-style: dashed;
+}
