@@ -6,7 +6,6 @@
     "esModuleInterop": true,
     "jsx": "react",
     "baseUrl": "./",
-    "types": ["jest", "jest-dom"],
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "KeyUI": ["src"],

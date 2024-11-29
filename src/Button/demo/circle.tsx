@@ -6,25 +6,25 @@ const App: FC = () => {
   return (
     <Space>
       <Button type="default" circle>
-        A
+        1
       </Button>
       <Button type="primary" circle>
-        B
+        2
       </Button>
       <Button type="danger" circle>
-        C
+        3
       </Button>
       <Button type="warning" circle>
-        D
+        4
       </Button>
       <Button type="info" circle>
-        E
+        5
       </Button>
       <Button type="link" circle>
-        F
+        6
       </Button>
       <Button type="dashed" circle>
-        G
+        7
       </Button>
     </Space>
   );

@@ -27,18 +27,16 @@
 
 <code src="./demo/size.tsx"></code>
 
+
 ## 圆角按钮
-
 配置 circle 变成圆按钮。
-
 <code src="./demo/circle.tsx"></code>
 
+
 ## 禁用按钮
-
 配置 disabled 禁用按钮。
-
 <code src="./demo/disabled.tsx"></code>
 
-## API
 
+## API
 <API id="Button"></API>

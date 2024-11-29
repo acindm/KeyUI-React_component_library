@@ -1,11 +1,10 @@
-@import '@/styles/common';
-@import 'mix';
+@import 'styles/common';
+@import './mix';
 
 .btn {
   position: relative;
   display: inline-block;
   font-weight: @btn-font-weight;
-  // line-height: @btn-line-height;
   color: @body-color;
   white-space: nowrap;
   text-align: center;
@@ -85,6 +84,26 @@
   &.circle,
   &[circle] {
     .button-circle(@height-sm);
+  }
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: @white;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1); // 可以根据需要调整 hover 状态的背景色
+    color: @white;
+  }
+
+  &.btn-primary,
+  &.btn-danger,
+  &.btn-warning,
+  &.btn-info,
+  &.btn-default,
+  &.btn-link,
+  &.btn-dashed {
+    color: @white;
   }
 }
 

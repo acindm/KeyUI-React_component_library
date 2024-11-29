@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
-import './styles/index.less' 
+import './styles/index.less'; // 引入基本样式
 
-//为 Button 组件的 props 提供类型检查和类型约束
+// 为 Button 组件的 props 提供类型检查和类型约束
 type ButtonProps = {
   style?: CSSProperties;
   className?: string;
@@ -11,11 +11,11 @@ type ButtonProps = {
   size?: 'small' | 'middle' | 'large';
   type?: 'primary' | 'default' | 'danger' | 'link' | 'warning' | 'info' | 'dashed';
   children?: ReactNode;
-  ghost?: boolean;
   href?: string;
   circle?: boolean;
   onClick?: MouseEventHandler<HTMLElement>;
 };
+
 
 const Button: React.FC<ButtonProps> = ({
   type = 'default',
