@@ -1,7 +1,5 @@
 import React, { useState, useMemo, forwardRef, CSSProperties, ReactNode, MouseEventHandler } from 'react';
 import cs from 'classnames';
-import './_index.scss';
-import './styles/index.less'; // 引入基本样式
 
 // 定义 SwitchProps 类型
 type SwitchProps = {
@@ -114,4 +112,6 @@ const Switch = (props: SwitchProps & ThemeProps, ref: any) => {
   );
 };
 
-export default forwardRef<unknown, SwitchProps & ThemeProps>(Switch);
+// export default forwardRef<unknown, SwitchProps & ThemeProps>(Switch);
+export default Switch;
+export type { SwitchProps };

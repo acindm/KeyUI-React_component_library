@@ -1,4 +1,4 @@
-import { TabItemType, Tabs } from '@indigo-ui/components';
+import { TabItemType, Tabs } from 'KeyUI';
 import React from 'react';
 import { FC } from 'react';
 

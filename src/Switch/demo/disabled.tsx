@@ -1,4 +1,4 @@
-import { Switch, Space } from '@indigo-ui/components';
+import { Switch, Space } from 'KeyUI';
 import React from 'react';
 import { FC } from 'react';
 

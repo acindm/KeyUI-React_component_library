@@ -1,4 +1,4 @@
-@import '../../styles/variable';
+@import "/styles/common.less";
 
 .cobalt-tabs {
   display: flex;
@@ -42,25 +42,21 @@
   }
 }
 
-.nav-line {
-  .cobalt-tabs-nav-item {
-    &.active {
-      border-bottom: var(--tabs-border-width) * 2 solid var(--tabs-link-active-color);
-    }
+.nav-line .cobalt-tabs-nav-item {
+  &.active {
+    border-bottom: calc(var(--tabs-border-width) * 2) solid var(--tabs-link-active-color);
   }
 }
 
-.nav-card {
-  .cobalt-tabs-nav-item {
-    margin-bottom: -var(--tabs-border-width);
-    border: var(--tabs-border-width) solid transparent;
+.nav-card .cobalt-tabs-nav-item {
+  margin-bottom: calc(-1 * var(--tabs-border-width));
+  border: var(--tabs-border-width) solid transparent;
 
-    &.active {
-      border-top-left-radius: var(--tabs-border-radius);
-      border-top-right-radius: var(--tabs-border-radius);
-      background-color: var(--tabs-link-active-bg);
-      border-color: var(--tabs-link-active-border-color);
-    }
+  &.active {
+    border-top-left-radius: var(--tabs-border-radius);
+    border-top-right-radius: var(--tabs-border-radius);
+    background-color: var(--tabs-link-active-bg);
+    border-color: var(--tabs-link-active-border-color);
   }
 }
 

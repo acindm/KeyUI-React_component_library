@@ -1,4 +1,5 @@
-import { TabItemType, Tabs } from '@indigo-ui/components';
+import { BugTwoTone } from '@ant-design/icons';
+import { Button, Space, TabItemType, Tabs } from 'KeyUI';
 import React from 'react';
 import { FC } from 'react';
 
@@ -17,7 +18,16 @@ const App: FC = () => {
     {
       label: `Tab 3`,
       key: '3',
-      children: `Content of Tab Pane 3`,
+      children: (
+        <Space direction="vertical">
+          <Button>Hello</Button>
+          <Space>
+            <BugTwoTone />
+            <BugTwoTone />
+            <BugTwoTone />
+          </Space>
+        </Space>
+      ),
     },
   ];
 
@@ -26,7 +36,7 @@ const App: FC = () => {
     console.log(key);
   };
 
-  return <Tabs type="card" defaultActiveKey="1" onTabClick={handleClick} items={items} />;
+  return <Tabs defaultActiveKey="1" onTabClick={handleClick} items={items} />;
 };
 
 export default App;

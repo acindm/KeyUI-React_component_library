@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { CSSProperties, FC, MouseEvent, useState } from 'react';
-import './style.scss';
 import './styles/index.less'; // 引入基本样式
 import React from 'react';
 import { TabItemType } from './types';
