@@ -1,11 +1,11 @@
 ---
 hero:
   title: Key-UI
-  description: Simple, Modular & Accessible UI Components for your React Applications
+  description: Simple, Modular & Accessible UI Components for React.
   actions:
-    - text: Hello
+    - text: 开始
       link: /
-    - text: World
+    - text: GitHub
       link: /
 features:
   - title: Hello

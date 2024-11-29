@@ -1,9 +1,9 @@
-# Foo
+# Button
 
-This is an example component.
+This is an Button component.
 
 ```jsx
-import { Foo } from 'KeyUI';
+import { Button } from 'KeyUI';
 
-export default () => <Foo title="Hello dumi!" />
+export default () => <Button title="Hello dumi!" />
 ```

@@ -6,4 +6,3 @@ This is an example component.
 import { Foo } from 'KeyUI';
 
 export default () => <Foo title="Hello dumi!" />
-```

@@ -1,5 +1,25 @@
-import React, { type FC } from 'react';
+import React, { memo } from 'react';
+import './styles/index.less' // 引入样式
+export interface ButtonProps {
+  /** 按钮类型 */
+  type?: 'primary' | 'default';
+  /** 按钮文字 */
+  children?: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
+}
 
-const Foo: FC<{ title: string }> = (props) => <h4>{props.title}</h4>;
+/** 按钮组件 */
+const Button: React.FC<ButtonProps> = (props) => {
+  const { type = 'default', children, onClick } = props
+  return (
+    <button
+      type='button'
+      className={`dumi-btn ${type ? 'dumi-btn-' + type : ''}`}
+      onClick={onClick}
+    >这是一个按钮
+      {children}
+    </button>
+  );
+};
 
-export default Foo;
+export default memo(Button);
