@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
-import './styles/index.less'; // 引入基本样式
+import './button.scss'; // 引入基本样式
 
 // 为 Button 组件的 props 提供类型检查和类型约束
 //参考 /styles/common.less文件

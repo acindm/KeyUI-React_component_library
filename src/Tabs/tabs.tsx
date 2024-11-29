@@ -1,13 +1,11 @@
 import classNames from 'classnames';
 import { CSSProperties, FC, MouseEvent, useState } from 'react';
-import './styles/index.less'; // 引入基本样式
-import React from 'react';
+import './tabs.scss';
 import { TabItemType } from './types';
+import React from 'react';
 
 export type TabsType = 'line' | 'card';
 
-// 为 Button 组件的 props 提供类型检查和类型约束
-//参考 /styles/common.less文件
 export type TabsProps = {
   className?: string;
   style?: CSSProperties;
@@ -21,6 +19,13 @@ const Tabs: FC<TabsProps> = ({ className, style, defaultActiveKey, type = 'line'
   const [activeKey, setActiveKey] = useState(defaultActiveKey);
   const tabsClassName = classNames('cobalt-tabs', className);
   const classes = classNames('cobalt-tabs-nav', `nav-${type}`);
+
+  /**
+   * 点击切换tabs页签时的回调
+   * @param e
+   * @param key
+   * @param disabled
+   */
   const clickHandler = (key: string | number, e: MouseEvent, disabled: boolean | undefined) => {
     if (!disabled) {
       setActiveKey(key);

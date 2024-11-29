@@ -1,8 +1,7 @@
-import Space from './Space';
-import Button  from './Button';
-import Switch from './Switch/switch';
-import Tabs, { TabsProps } from './Tabs/tabs';
-import { TabItemType } from './Tabs/types';
+export { default as Space } from './Space';
+export { default as Button } from './Button';
+import { Switch } from './Switch';
+import { Tabs, type TabItemType, type TabsProps } from './Tabs';
 
-export { Space, Button, Switch, Tabs }
+export { Tabs, Switch };
 export type { TabItemType, TabsProps };

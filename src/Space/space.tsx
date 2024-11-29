@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Children, FC, ReactNode, memo, useMemo } from 'react';
-import './styles/index.less'; // 引入基本样式
+import './space.scss'; // 引入基本样式
 import { AlignItemsType, AlignType, SizeType, SpaceAlignParamsType, SpaceProps } from './types';
 import React from 'react';
 
