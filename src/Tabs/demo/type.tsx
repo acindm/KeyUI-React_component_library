@@ -1,4 +1,4 @@
-import { TabItemType, Tabs } from 'KeyUI';
+import { Button, Space, TabItemType, Tabs } from 'KeyUI';
 import React from 'react';
 import { FC } from 'react';
 
@@ -7,17 +7,20 @@ const App: FC = () => {
     {
       label: `Tab 1`,
       key: '1',
-      children: `Content of Tab Pane 1`,
+      children: `Text Test: This is a test.`,
     },
     {
       label: `Tab 2`,
       key: '2',
-      children: `Content of Tab Pane 2`,
+      children: `Emoji Test: 😘`,
     },
     {
       label: `Tab 3`,
       key: '3',
-      children: `Content of Tab Pane 3`,
+      children: (        
+        <Space direction="vertical">
+          <Button>Button Test</Button>
+        </Space>),
     },
   ];
 

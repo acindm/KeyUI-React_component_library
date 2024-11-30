@@ -1,4 +1,4 @@
-import { Button, Space } from 'KeyUI';
+import { Button, Space } from '@indigo-ui/components';
 import React from 'react';
 import { FC, useState } from 'react';
 
@@ -18,8 +18,7 @@ const App: FC = () => {
           large
         </Button>
       </Space>
-      <br />
-      <br />
+      
       <Space size={size}>
         <Button type="primary">Primary</Button>
         <Button>Default</Button>

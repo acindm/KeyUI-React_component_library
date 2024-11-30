@@ -8,31 +8,25 @@ const App: FC = () => {
     {
       label: `Tab 1`,
       key: '1',
-      children: `Content of Tab Pane 1`,
+      children: `Text Test: This is a test.`,
     },
     {
       label: `Tab 2`,
       key: '2',
-      children: `Content of Tab Pane 2`,
+      children: `Emoji Test: 😘`,
     },
     {
       label: `Tab 3`,
       key: '3',
       children: (
         <Space direction="vertical">
-          <Button>Hello</Button>
-          <Space>
-            <BugTwoTone />
-            <BugTwoTone />
-            <BugTwoTone />
-          </Space>
+          <Button>Button Test</Button>
         </Space>
       ),
     },
   ];
 
   const handleClick = (key: string | number) => {
-    // eslint-disable-next-line no-console
     console.log(key);
   };
 

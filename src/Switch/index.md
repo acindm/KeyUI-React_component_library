@@ -4,7 +4,7 @@ nav:
   title: 组件
   path: /src
 group:
-  title: 基础
+  title: 基础组件
 ---
 
 # Switch 开关

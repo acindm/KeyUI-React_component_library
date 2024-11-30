@@ -1,44 +1,33 @@
 ---
-category: Components
 title: Space 间距
-toc: content
+nav:
+  title: 组件
+  path: /src
 group:
   title: 基础组件
-  order: 1
 ---
-
 # Space 间距
+设置组件之间的距离。
 
-设置组件之间的间距。
+## 使用场景
+避免组件初始时紧贴在一起，设置组件之间的距离。
+- 适用于行内元素的水平间距。可以设置各种水平对齐方式。
 
-## 何时使用
 
-避免组件紧贴在一起，拉开统一的空间。
-
-- 适合行内元素的水平间距。
-
-- 可以设置各种水平对齐方式。
-
-## 基本使用
-
+## 默认用法
 相邻组件水平间距。
+<code src="./demos/base.tsx"></code>
 
-<code src="./demos/basic.tsx"></code>
 
 ## 垂直间距
-
-可以设置垂直方向排列的间距。
-
+垂直方向排列的间距。
 <code src="./demos/direction.tsx"></code>
 
+
 ## 间距大小
-
-间距预设大、中、小三种大小。
-
-通过设置 size 为 large middle 分别把间距设为大、中间距。若不设置 size，则间距为小。
-
+size默认为small。通过设置 size 为 large middle 分别把间距设为大、中间距。
 <code src="./demos/size.tsx"></code>
 
-## API
 
+## API
 <API id="Space"></API>
