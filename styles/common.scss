@@ -15,8 +15,8 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 // 系统级色彩体系
+$main: #6debf3 !default;
 $blue: #1890ff !default;
-$indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
@@ -45,7 +45,7 @@ $light: $gray-100 !default;
 $dark: $gray-800 !default;
 
 $theme-colors: (
-  'primary': $primary,
+  'primary': $main,
   'secondary': $secondary,
   'success': $success,
   'info': $info,
