@@ -12,5 +12,5 @@
       "KeyUI/*": ["src/*", "*"]
     }
   },
-  "include": [".dumirc.ts", "src/**/*"]
+  "include": [".dumirc.ts", "src/**/*", "src/Toast/demo/.tsx"]
 }

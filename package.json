@@ -62,6 +62,7 @@
     "@types/jest": "^29.5.14",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/react-transition-group": "^4.4.11",
     "@types/testing-library__react": "^10.0.1",
     "@umijs/lint": "^4.0.0",
     "autoprefixer": "^10.4.20",
@@ -80,6 +81,7 @@
     "tailwindcss": "^3.4.15"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.2.0",
     "@indigo-ui/components": "^0.5.12",
     "cosine-ui": "^0.1.4"
   }

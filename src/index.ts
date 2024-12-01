@@ -8,6 +8,8 @@ export { default as Icon } from './Icon/icon'
 export {  Loading, Skeleton } from './Loading/loading';
 export { FixedSizeList, VariableSizeList } from './Virtualist';
 export { default as DragList } from './DragList';
+export { default as message } from './Toast'
+
 
 export { Tabs, Switch };
 export type { TabItemType, TabsProps };
