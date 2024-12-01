@@ -5,6 +5,8 @@ export { default as Space } from './Space';
 export { default as Button } from './Button';
 export { default as Icon } from './Icon/icon'
 export {  Loading, Skeleton } from './Loading/loading';
+export { FixedSizeList, VariableSizeList } from './Virtualist';
+
 
 export { Tabs, Switch };
 export type { TabItemType, TabsProps };
