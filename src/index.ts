@@ -9,7 +9,7 @@ export {  Loading, Skeleton } from './Loading/loading';
 export { FixedSizeList, VariableSizeList } from './Virtualist';
 export { default as DragList } from './DragList';
 export { default as message } from './Toast'
-
+export { default as Slide } from './Slide';
 
 export { Tabs, Switch };
 export type { TabItemType, TabsProps };

@@ -11,7 +11,7 @@ const App: FC = () => {
         textAlign: 'center',
         cursor: 'pointer',
         margin: '6px 0',
-        background: '#6debf3',
+        background: '#1890ff',
       }}
     >
       {i + 1}

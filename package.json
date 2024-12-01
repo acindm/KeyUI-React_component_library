@@ -83,6 +83,8 @@
   "dependencies": {
     "@faker-js/faker": "^9.2.0",
     "@indigo-ui/components": "^0.5.12",
-    "cosine-ui": "^0.1.4"
+    "cosine-ui": "^0.1.4",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   }
 }

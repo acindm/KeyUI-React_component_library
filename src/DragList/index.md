@@ -18,4 +18,7 @@ group:
 
 
 ## API
-<API id="DragList"></API>
+| Name              | Description   | Type            | Default |
+| ----------------- | ------------  | --------------- | ------- |
+| onChange         | 拖拽后触发。参数分别为：新数组、拖拽元素 index、目标位置元素    | `Function`        | `(newVal: ReactElement[], fromIndex: number, toIndex: number) => {}`    |
+| onDragEnd           | 对应原生 onDragEnd 回调      | `Function`       | `() => {}`  |

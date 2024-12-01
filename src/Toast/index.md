@@ -23,4 +23,4 @@ group:
 | ----------------- | ------------  | --------------- | ------- |
 | className         | 自定义类名      | `string`        | `--`    |
 | content           | 对象类型传参时的内容 | `string`   | `--`  |
-| type              | Message类型    | `"info" | "success" | "warning" | "error" | "normal" | "loading"`       | `--` |
+| type              | Message类型    | `"info"   "success"  "warning"   "error"`       | `--` |
