@@ -60,6 +60,12 @@
     "react-dom": ">=16.9.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.25.9",
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -78,6 +84,8 @@
     "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
+    "jest-css-modules-transform": "^4.4.2",
+    "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.49",
     "prettier": "^2.7.1",
@@ -85,6 +93,8 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
     "stylelint": "^14.9.1",
     "tailwindcss": "^3.4.15",
     "ts-jest": "^29.2.5"
@@ -92,6 +102,8 @@
   "dependencies": {
     "@faker-js/faker": "^9.2.0",
     "@indigo-ui/components": "^0.5.12",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/user-event": "^14.5.2",
     "cosine-ui": "^0.1.4",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
