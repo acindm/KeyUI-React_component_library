@@ -4,7 +4,7 @@ import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
 import './button.scss'; // 引入基本样式
 
 // 为 Button 组件的 props 提供类型检查和类型约束
-//参考 /styles/common.less文件
+//参考 /styles/common.sess文件
 type ButtonProps = {
   style?: CSSProperties;
   className?: string;
@@ -30,6 +30,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   ...restProps
 }) => {
+  
   const classes = classNames('btn', className, {
     [`btn-${type}`]: type,
     [`btn-${size}`]: size,

@@ -1,6 +1,5 @@
 import { Button, Space } from 'KeyUI';
-import React from 'react';
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 const App: FC = () => {
   return (
