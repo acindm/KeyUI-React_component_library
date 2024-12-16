@@ -35,6 +35,14 @@ describe('test button component', () => {
     expect(element?.tagName).toBe('A');
   });
 
+  //测试圆形按钮
+  it('circle button', () => {
+    const { getByText } = render(<Button circle>btn-circle</Button>);
+    const element = getByText('btn-circle');
+
+    expect(element).toHaveClass('circle');
+  });
+
   //测试禁用按钮
   it('button disabled', () => {
     const { getByText } = render(
@@ -55,14 +63,6 @@ describe('test button component', () => {
     expect(element).toHaveClass('btn-large');
   });
 
-
-  //测试圆形按钮
-  it('circle button', () => {
-    const { getByText } = render(<Button circle>btn-circle</Button>);
-    const element = getByText('btn-circle');
-
-    expect(element).toHaveClass('circle');
-  });
 
   //测试按钮点击事件
   it('button click event', () => {
